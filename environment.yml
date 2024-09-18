@@ -1,0 +1,13 @@
+name: maxvogt
+channels:
+  - conda-forge
+dependencies:
+  - momepy
+  - pygeos
+  - osmnx
+  - clustergram
+  - bokeh
+  - scikit-learn
+  - geopy
+  - ipywidgets
+  - jupyter
