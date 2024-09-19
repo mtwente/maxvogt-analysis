@@ -33,6 +33,28 @@ Additionally, there is a [Zotero group library](https://www.zotero.org/groups/54
 - TODO Data models, including field names, descriptions, and controlled values, should be clearly documented in a static document that is maintained with the data and is part of the products.
 - TODO All rights and intellectual property issues should be clearly documented. Where possible, data and products should be released under open licenses (Creative Commons, GNU, BSD, MPL).
 
+## Installation
+
+To run the analysis locally, create a new `conda` environment based on the `environment.yml` file.
+
+```bash
+conda env create -f environment.yml
+```
+
+Activate the environment.
+
+```bash
+conda activate maxvogt
+```
+
+Open the Jupyter Notebook platform.
+
+```bash
+jupyter notebook
+```
+
+Pick a notebook to start the spatial analysis for one of Max Vogt's buildings.
+
 ## Use
 
 These data are openly available to everyone and can be used for any research or educational purpose. If you use this data in your research, please cite as specified in [CITATION.cff](CITATION.cff). The following citation formats are also available through _Zenodo_:
