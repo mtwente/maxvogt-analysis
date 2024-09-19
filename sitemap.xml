@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mtwente.github.io/maxvogt-analysis/LICENSE-ODbL.html</loc>
-    <lastmod>2024-09-19T10:54:23.052Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mtwente.github.io/maxvogt-analysis/LICENSE-AGPL.html</loc>
-    <lastmod>2024-09-19T10:53:41.196Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mtwente.github.io/maxvogt-analysis/LICENSE-CCBY.html</loc>
-    <lastmod>2024-09-19T10:53:41.196Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mtwente.github.io/maxvogt-analysis/index.html</loc>
-    <lastmod>2024-09-19T10:53:41.265Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mtwente.github.io/maxvogt-analysis/analysis/buchs.html</loc>
-    <lastmod>2024-09-19T10:54:23.071Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mtwente.github.io/maxvogt-analysis/CODE_OF_CONDUCT.html</loc>
-    <lastmod>2024-09-19T10:54:23.051Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mtwente.github.io/maxvogt-analysis/analysis/horgen.html</loc>
-    <lastmod>2024-09-19T10:54:23.098Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mtwente.github.io/maxvogt-analysis/CHANGELOG.html</loc>
-    <lastmod>2024-09-19T10:54:23.051Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mtwente.github.io/maxvogt-analysis/CONTRIBUTING.html</loc>
-    <lastmod>2024-09-19T10:53:41.195Z</lastmod>
+    <loc>https://mtwente.github.io/maxvogt-analysis/fonts/LICENSE-OFL.html</loc>
+    <lastmod>2024-09-19T12:07:00.787Z</lastmod>
   </url>
   <url>
     <loc>https://mtwente.github.io/maxvogt-analysis/about.html</loc>
-    <lastmod>2024-09-19T10:54:23.053Z</lastmod>
+    <lastmod>2024-09-19T12:07:00.711Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mtwente.github.io/maxvogt-analysis/CHANGELOG.html</loc>
+    <lastmod>2024-09-19T12:07:00.710Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mtwente.github.io/maxvogt-analysis/LICENSE-AGPL.html</loc>
+    <lastmod>2024-09-19T12:07:00.710Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mtwente.github.io/maxvogt-analysis/analysis/horgen.html</loc>
+    <lastmod>2024-09-19T12:07:00.772Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mtwente.github.io/maxvogt-analysis/LICENSE-CCBY.html</loc>
+    <lastmod>2024-09-19T12:07:00.711Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mtwente.github.io/maxvogt-analysis/CODE_OF_CONDUCT.html</loc>
+    <lastmod>2024-09-19T12:07:00.710Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mtwente.github.io/maxvogt-analysis/index.html</loc>
+    <lastmod>2024-09-19T12:07:00.788Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mtwente.github.io/maxvogt-analysis/analysis/buchs.html</loc>
+    <lastmod>2024-09-19T12:07:00.737Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mtwente.github.io/maxvogt-analysis/LICENSE-ODbL.html</loc>
+    <lastmod>2024-09-19T12:07:00.711Z</lastmod>
   </url>
   <url>
     <loc>https://mtwente.github.io/maxvogt-analysis/SECURITY.html</loc>
-    <lastmod>2024-09-19T10:54:23.052Z</lastmod>
+    <lastmod>2024-09-19T12:07:00.711Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mtwente.github.io/maxvogt-analysis/CONTRIBUTING.html</loc>
+    <lastmod>2024-09-19T12:07:00.710Z</lastmod>
   </url>
 </urlset>
