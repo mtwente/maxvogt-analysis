@@ -2,13 +2,13 @@ project:
   type: website
 
 website:
-  title: REPO_NAME
+  title: maxvogt-analysis
   favicon: android-chrome-512x512.png
   open-graph: true
   twitter-card: true
-  site-url: https://USERNAME.github.io/REPO_NAME/
-  repo-url: https://github.com/USERNAME/REPO_NAME/
-  issue-url: https://github.com/USERNAME/REPO_NAME/issues/new/choose
+  site-url: https://mtwente.github.io/maxvogt-analysis/
+  repo-url: https://github.com/mtwente/maxvogt-analysis/
+  issue-url: https://github.com/mtwente/maxvogt-analysis/issues/new/choose
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
@@ -19,19 +19,19 @@ website:
   navbar:
     logo: android-chrome-512x512.png
     logo-alt: ''
-    title: REPO_NAME
+    title: maxvogt-analysis
     tools:
       - icon: github
-        url: https://github.com/USERNAME/REPO_NAME/
+        url: https://github.com/mtwente/maxvogt-analysis/
     left:
-      - text: Readme
+      - text: Data
         href: index.qmd
-      - text: Report
-        href: report.md
+      - text: Project
+        href: about.md
 
   sidebar:
     contents:
-      - section: REPO_NAME
+      - section: maxvogt-analysis
         href: index.qmd
         contents:
           - text: Changelog
@@ -44,10 +44,11 @@ website:
             href: LICENSE-CCBY.md
           - text: License (Code)
             href: LICENSE-AGPL.md
+          - text: License (Geodata)
+            href: LICENSE-ODbL.md
           - text: Security
             href: SECURITY.md
-      - href: report.md
-        contents: project-management/*
+      - href: about.md
 
 format:
   html:

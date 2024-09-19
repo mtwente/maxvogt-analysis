@@ -1,0 +1,42 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: maxvogt-analysis
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Moritz
+    family-names: Twente
+    email: moritz.twente@unibas.ch
+    affiliation: University of Basel
+    orcid: 'https://orcid.org/0009-0005-7187-9774'
+  - given-names: Luisa
+    family-names: Omonsky
+    email: luisa.omonsky@tuwien.ac.at
+    affiliation: TU Wien
+    orcid: 'https://orcid.org/0009-0007-7402-7993'
+#identifiers:
+#  - type: doi
+#    value: xxxxxx
+repository-code: 'https://github.com/mtwente/maxvogt-analysis'
+url: 'https://mtwente.github.io/maxvogt-analysis'
+repository: 'https://github.com/mtwente/maxvogt'
+abstract: >-
+  Data for spatial analyses that is part of a research
+  project on spatial/urban design features of
+  railway-related built structures designed by the Swiss
+  architect Max Vogt. Results of the analyses are accessible
+  in an online collection of Vogt’s buildings and presented
+  as a poster at the Spatial Humanities 2024 conference at
+  the University of Bamberg.
+keywords:
+  - Max Vogt
+  - SBB
+  - Urban Design
+  - Spatial Analysis
+  - train station
+  - urban morphology
+license: CC-BY-SA-4.0
