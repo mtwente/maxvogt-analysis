@@ -1,3 +1,7 @@
+# momepy temporary files
+analysis/.ipynb_checkpoints/
+analysis/cache/
+
 # Quarto
 .quarto/
 _site/
