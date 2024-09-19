@@ -24,10 +24,10 @@ website:
       - icon: github
         url: https://github.com/mtwente/maxvogt-analysis/
     left:
-      - text: Readme
+      - text: Data
         href: index.qmd
-      - text: Report
-        href: report.md
+      - text: Project
+        href: about.md
 
   sidebar:
     contents:
@@ -44,10 +44,11 @@ website:
             href: LICENSE-CCBY.md
           - text: License (Code)
             href: LICENSE-AGPL.md
+          - text: License (Geodata)
+            href: LICENSE-ODbL.md
           - text: Security
             href: SECURITY.md
-      - href: report.md
-        contents: project-management/*
+      - href: about.md
 
 format:
   html:

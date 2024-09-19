@@ -7,23 +7,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/mtwente/maxvogt-analysis/compare/...HEAD)
 
-### Documentation
-
-- Docs for Zenodo added
-- Fixed various typos and replaced favicon
-
-### Features
-
-- Initial version
-
-## [0.0.2](https://github.com/mtwente/maxvogt-analysis/compare/v0.0.1...v0.0.2) - 2020-02-26
-
-### Documentation
-
-- ...
-
-## [0.0.1](https://github.com/mtwente/maxvogt-analysis/releases/tag/v0.0.1) - 2020-01-13
-
-### Features
-
-- ...
+- Initialise repository
+- Add Buchs SG and Horgen analyses
+- Add momepy files to gitignore
