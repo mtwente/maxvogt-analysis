@@ -28,6 +28,9 @@ website:
         href: index.qmd
       - text: Project
         href: about.md
+      - text: maxvogt Collection
+        href: https://mtwente.github.io/maxvogt
+        target: '_blank'
 
   sidebar:
     contents:
@@ -53,10 +56,12 @@ website:
 format:
   html:
     toc: true
-    theme: cosmo
+    theme:
+      light: [cosmo, styles.css]
     code-copy: true
     code-overflow: wrap
-    css: styles.css
+    mainfont: Jost
+    link-external-newwindow: true
 
 freeze: true
 
