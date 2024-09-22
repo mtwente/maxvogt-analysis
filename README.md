@@ -113,10 +113,10 @@ See also the list of [contributors](https://github.com/mtwente/maxvogt-analysis/
 
 ## License
 
-The **data** in this repository, excluding OpenStreetMap geodata, is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) License - see the [LICENSE-CCBY](LICENSE-CCBY.md) file for details. By using this data, you agree to give appropriate credit to the original author(s) and to indicate if any modifications have been made.
+The **data** in this repository, excluding OpenStreetMap geodata, is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) License – see the [LICENSE-CCBY](LICENSE-CCBY.md) file for details. By using this data, you agree to give appropriate credit to the original author(s) and to indicate if any modifications have been made.
 
 **Geodata** in this repository, retrieved from OpenStreetMap, is released under the Open Database License – see the [LICENSE-ODbL](LICENSE-ODbL.md) file for details. By using this data, you agree to adhere to the attribution standards set out in the license and specified by the [OpenStreetMap Foundation](https://osmfoundation.org/wiki/Licence).
 
-The **code** in this repository, excluding the Jupyter notebooks in `/analysis/`, is released under the GNU Affero General Public License v3.0 - see the [LICENSE-AGPL](LICENSE-AGPL.md) file for details. By using this code, you agree to make any modifications available under the same license.
+The **code** in this repository, excluding the Jupyter notebooks in `/analysis/`, is released under the GNU Affero General Public License v3.0 – see the [LICENSE-AGPL](LICENSE-AGPL.md) file for details. By using this code, you agree to make any modifications available under the same license.
 
-The **Jupyter notebooks** in `/analysis` are released under the Creative Commons Attribution 4.0 International (CC BY 4.0) License - see the [LICENSE-CCBY](LICENSE-CCBY.md) file for details. By using this data, you agree to give appropriate credit to the original author(s) and to indicate if any modifications have been made.
+The **Jupyter notebooks** in `/analysis/` are released under the Creative Commons Attribution 4.0 International (CC BY 4.0) License – see the [LICENSE-CCBY](LICENSE-CCBY.md) file for details. By using this data, you agree to give appropriate credit to the original author(s) and to indicate if any modifications have been made.
