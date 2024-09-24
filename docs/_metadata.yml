@@ -1,0 +1,12 @@
+format:
+  html:
+    citation:
+      type: standard
+      event: Spatial Humanities 2024
+      container-title: 'Max Vogt: Morphologies of Arriving. Showcasing the Design Philosophy of Max Vogt’s Railway Stations'
+      author:
+        - name: Moritz Twente
+        - name: Luisa Omonsky
+      issued: 2024-09
+
+freeze: auto
