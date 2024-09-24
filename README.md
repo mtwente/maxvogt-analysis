@@ -2,7 +2,7 @@
 
 This repository contains data for spatial analyses that are part of a research project on spatial/urban design features of railway-related built structures designed by the Swiss architect Max Vogt. The data in this repository is openly available to everyone and is intended to support reproducible research.
 
-Results of the analyses are accessible in an [online collection of Vogt's buildings](https://mtwente.github.io/maxvogt) and presented as a [poster](https://pretalx.com/spathum24/talk/review/9RCVBFLLKYE7BDXC7M38QHH7D7FVZFSP) at the [Spatial Humanities 2024](https://spathum.uni-bamberg.de/) conference at the University of Bamberg.
+Results of the analyses are accessible in an [online collection of Vogt's buildings](https://mtwente.github.io/maxvogt) and presented as a [poster](/docs/abstract.html) at the [Spatial Humanities 2024](https://spathum.uni-bamberg.de/) conference at the University of Bamberg.
 
 [![GitHub issues](https://img.shields.io/github/issues/mtwente/maxvogt-analysis.svg)](https://github.com/mtwente/maxvogt-analysis/issues)
 [![GitHub forks](https://img.shields.io/github/forks/mtwente/maxvogt-analysis.svg)](https://github.com/mtwente/maxvogt-analysis/network)
@@ -29,9 +29,7 @@ Additionally, there is a [Zotero group library](https://www.zotero.org/groups/54
 
 ## Data Description
 
-- TODO Describe the data in this repository, including what it represents, how it was collected or obtained, any preprocessing or cleaning that was done, and any limitations or potential biases.
-- TODO Data models, including field names, descriptions, and controlled values, should be clearly documented in a static document that is maintained with the data and is part of the products.
-- TODO All rights and intellectual property issues should be clearly documented. Where possible, data and products should be released under open licenses (Creative Commons, GNU, BSD, MPL).
+See [Workflow](/docs/workflow.html) for a description of the project workflow and the data obtained for this project.
 
 ## Installation
 

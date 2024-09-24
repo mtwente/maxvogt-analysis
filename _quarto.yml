@@ -24,10 +24,12 @@ website:
       - icon: github
         url: https://github.com/mtwente/maxvogt-analysis/
     left:
-      - text: Data
-        href: index.qmd
+      #- text: Readme
+      #  href: index.qmd
       - text: Project
-        href: about.md
+        href: docs/about.qmd
+      - text: Workflow
+        href: docs/workflow.qmd
       - text: maxvogt Collection
         href: https://mtwente.github.io/maxvogt
         target: '_blank'
@@ -51,7 +53,13 @@ website:
             href: LICENSE-ODbL.md
           - text: Security
             href: SECURITY.md
-      - href: about.md
+      - text: Project
+        href: docs/about.qmd
+        contents:
+          - text: Abstract
+            href: docs/abstract.qmd
+      - text: Workflow
+        href: docs/workflow.qmd
 
 format:
   html:
@@ -62,6 +70,8 @@ format:
     code-overflow: wrap
     mainfont: Jost
     link-external-newwindow: true
+    mermaid:
+      theme: neutral
 
 freeze: true
 
