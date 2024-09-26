@@ -1,0 +1,31 @@
+---
+title: "Poster Abstract"
+author:
+  - name: Moritz Twente
+    orcid: 0009-0005-7187-9774
+    email: moritz.twente@unibas.ch
+    affiliations:
+      - University of Basel
+  - name: Luisa Omonsky
+    orcid: 0009-0007-7402-7993
+    email: luisa.omonsky@tuwien.ac.at
+    affiliations:
+      - Vienna University of Technology
+date: 09-25-2024
+date-modified: 02-15-2024
+bibliography: SBB-max-vogt.bib
+---
+
+::: {.callout-note appearance="simple"}
+This is the abstract for a poster on Max Vogt's work, presented at *Spatial Humanities 2024* at Otto-Friedrich-Universität Bamberg.
+:::
+
+Hundreds of thousands of passengers arrive at Zurich main station in thousands of trains every day, watched over by the signal box tower outside the station hall. Many of them passed Altstetten station just minutes before, with a high-rise apartment block next to the rails welcoming them to Switzerland’s biggest city. Some may have boarded the train at Stein-Säckingen on the banks of the Rhine, others perhaps in close-by suburban Spreitenbach. All these places were – to some extent – shaped by Max Vogt, who designed over 150 buildings for the Swiss Federal Railways (SBB). Although his buildings characterise many railway station areas in Switzerland until today and are familiar sights to many travellers, Vogt himself is hardly known. With our submission, we aim to showcase his work and to carry out morphological analyses, engaging with the ideas about architecture and urban spaces that materialised in his projects.
+
+Vogt’s buildings are valuable parts of Switzerland’s architectural heritage and considered cornerstones for the current state and future development of urban settings with a high standard of building culture. As individually crafted architectural forms that take requirements of railway engineering into account, the station buildings have a strong visual identity themselves [@nozhova_historische_2022]: Over thirty years, Vogt and his team developed an architectural corporate design for SBB [@weidmann_max_2008-1, p. 20] featuring distinct shapes and material choices. Vogt enjoyed far-reaching creative freedom; because he was operating on government-owned land, he did not have to strictly adhere to municipal zoning plans and building regulations. His buildings – infrastructure for passengers such as station buildings and shelters, but also facilities for cargo trains and signal boxes – are therefore referred to as »exterritorial« [@weidmann_max_2008-1, p. 20; @stollenwerk_sbb_2006, p. 9] architecture. Still, he emphasised the role of his station building designs and their surroundings for relating the transport infrastructure to the spatial syntax of the local built environment and for creating counterweights to the linearity of the adjacent railway [@weidmann_max_2008-1, p. 31].
+
+Vogt’s aim for morphological connections while working with an exterritorial planning approach raises the question of the extent to which his designs succeeded in creating the relations he was striving for. Key literature [@weidmann_max_2008-1; @stollenwerk_sbb_2006] primarily describes architectural features of the station buildings as transit space for travellers. Focusing on their spatial contexts instead, we approach Vogt’s œuvre from a morphological perspective to critically engage with his design vocabulary: Can his station buildings bridge the gap between the railway lines and their surroundings? Does the architecture provide a counterweight to the velocity induced by expanding rail service, as Vogt intended to? Do his designs help to translate the linearity of the railway to the spatial syntax of the places it serves?
+
+In short: We shift the analysis from an architectural focus on form as property of structures and materials to a morphological one, highlighting form as relational feature of urban spaces instead [cf. @marcus_aufkommen_2021, p. 89]. We investigate this by analysing the spatial context around station buildings designed by Vogt. Comparing spatial networks, hierarchies and patterns of relationships enables us to interpret Vogt’s designs as interrelated forms within their local context and across cities [@kropf_handbook_2017, p. 14]. The analysis is carried out mainly using momepy [@fleischmann_momepy_2019] and others, if need be. The data set for our analysis is retrieved from OpenStreetMap and swisstopo. Since the built environment has, in many places, evolved since Vogt designed his buildings, we may rely, if necessary, on georeferencing historical maps for incorporating the contemporary spatial context in our analysis.
+
+The analysis is intended to enhance the existing catalogue of Vogt's work with additional metadata about its morphological properties. The results are being made available online, linking existing resources from different archives to the catalogue of Vogt’s works, and joining them into an online exhibition in one place. We do this, secondly, to showcase CollectionBuilder [@williamson_collectionbuilder_2019]. CollectionBuilder is an open-source framework for creating digital collections with emphasis on low entry barriers and minimal external requirements. Timelines, maps and other browsing features are generated from metadata as starting points for exploring a collection of historic items. At the same time, the website remains easily customizable also for researchers without programming experience.
