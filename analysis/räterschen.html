@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>maxvogt-analysis: Dübendorf – maxvogt-analysis</title>
+<title>maxvogt-analysis: Räterschen – maxvogt-analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,10 +103,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="maxvogt-analysis: Dübendorf – maxvogt-analysis">
+<meta property="og:title" content="maxvogt-analysis: Räterschen – maxvogt-analysis">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="maxvogt-analysis">
-<meta name="twitter:title" content="maxvogt-analysis: Dübendorf – maxvogt-analysis">
+<meta name="twitter:title" content="maxvogt-analysis: Räterschen – maxvogt-analysis">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
@@ -155,7 +155,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">maxvogt-analysis: Dübendorf</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">maxvogt-analysis: Räterschen</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -279,14 +279,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#export" id="toc-export" class="nav-link" data-scroll-target="#export">Export</a></li>
   <li><a href="#utilities" id="toc-utilities" class="nav-link" data-scroll-target="#utilities">Utilities</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.dev/mtwente/maxvogt-analysis/blob/main/analysis/dübendorf.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mtwente/maxvogt-analysis/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.dev/mtwente/maxvogt-analysis/blob/main/analysis/räterschen.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mtwente/maxvogt-analysis/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">maxvogt-analysis: Dübendorf</h1>
+<h1 class="title">maxvogt-analysis: Räterschen</h1>
 </div>
 
 
@@ -306,7 +306,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The code in this notebook is based on <a href="https://martinfleischmann.net/">Martin Fleischmann’s</a> 2021 workshop <a href="https://github.com/martinfleis/sdsc21-workshop"><em>Capturing the Structure of Cities with Data Science (SDSC)</em></a>, licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>. © 2021 Martin Fleischmann.</p>
 <p>The geodata in this notebook is retrieved from OpenStreetMap. © OpenStreetMap Contributors.</p>
 <hr>
-<p>This notebook contains geodata and analyses for the following items of the <a href="https://mtwente.github.io/maxvogt/">Max Vogt collection</a> by Moritz Twente and Luisa Omonsky: - <a href="https://mtwente.github.io/maxvogt/items/due025.html">DUE025</a></p>
+<p>This notebook contains geodata and analyses for the following item of the <a href="https://mtwente.github.io/maxvogt/">Max Vogt collection</a> by Moritz Twente and Luisa Omonsky: - <a href="https://mtwente.github.io/maxvogt/items/raet051.html">RAET051</a></p>
 <hr>
 <p>Open in an interactive in-browser environment:</p>
 <div class="quarto-figure quarto-figure-center">
@@ -334,14 +334,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Pick a place, ideally a town with a good coverage in OpenStreetMap and its local CRS.</p>
 <div id="cell-4" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-tags="[]">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>place <span class="op">=</span> <span class="st">'Dübendorf'</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>point <span class="op">=</span> <span class="fl">47.40015</span>, <span class="fl">8.62314</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>address <span class="op">=</span> <span class="st">'Bettlistrasse 1, 8600 Dübendorf'</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>dist <span class="op">=</span> <span class="dv">2000</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>place <span class="op">=</span> <span class="st">'Räterschen'</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>point <span class="op">=</span> <span class="fl">47.49858</span>, <span class="fl">8.79535</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>address <span class="op">=</span> <span class="st">'St. Gallerstrasse 45.1, 8352 Elsau'</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>dist <span class="op">=</span> <span class="dv">1000</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>local_crs <span class="op">=</span> <span class="st">'EPSG:2056'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="cell-5" class="cell" data-scrolled="true">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>geopandas.tools.geocode(address).explore()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#geopandas.tools.geocode(point).explore()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="input-data" class="level2">
 <h2 class="anchored" data-anchor-id="input-data">Input data</h2>
@@ -474,7 +474,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_axis_off()</span>
 <span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_axis_off()</span>
 <span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Dübendorf/eri_and_elongation.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Räterschen/eri_and_elongation.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="cell-41" class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">24</span>, <span class="dv">12</span>))</span>
@@ -488,7 +488,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_axis_off()</span>
 <span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_axis_off()</span>
 <span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Dübendorf/convexity_and_linearity.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Räterschen/convexity_and_linearity.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="spatial-distribution" class="level3">
@@ -499,7 +499,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="cell-44" class="cell">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>buildings.plot(<span class="st">"shared_walls"</span>, figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">12</span>), scheme<span class="op">=</span><span class="st">"natural_breaks"</span>, legend<span class="op">=</span><span class="va">True</span>).set_axis_off()</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Dübendorf/sharedwalls.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Räterschen/sharedwalls.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Generate spatial weights matrix using <code>libpysal</code>.</p>
 <div id="cell-46" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}">
@@ -527,7 +527,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_axis_off()</span>
 <span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_axis_off()</span>
 <span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Dübendorf/neighbourdist_and_coveredarea.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Räterschen/neighbourdist_and_coveredarea.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="cell-49" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>queen_3 <span class="op">=</span> momepy.sw_high(k<span class="op">=</span><span class="dv">3</span>, weights<span class="op">=</span>queen_1)</span>
@@ -566,7 +566,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_axis_off()</span>
 <span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">2</span>].set_axis_off()</span>
 <span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Dübendorf/road_network.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Räterschen/road_network.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="intensity" class="level3">
@@ -578,7 +578,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>tessellation.plot(<span class="st">"car"</span>, figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">12</span>), vmin<span class="op">=</span><span class="dv">0</span>, vmax<span class="op">=</span><span class="dv">1</span>, legend<span class="op">=</span><span class="va">True</span>).set_axis_off()</span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Building/Tessellation Area Ratio"</span>)</span>
 <span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Dübendorf/tessellation_ratio.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Räterschen/tessellation_ratio.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="connectivity" class="level3">
@@ -605,7 +605,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_axis_off()</span>
 <span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">2</span>].set_axis_off()</span>
 <span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Dübendorf/connectivity.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Räterschen/connectivity.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="cell-61" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>buildings[<span class="st">"nodeID"</span>] <span class="op">=</span> momepy.get_node_id(buildings, nodes, streets, <span class="st">"nodeID"</span>, <span class="st">"nID"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -652,7 +652,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_axis_off()</span>
 <span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_axis_off()</span>
 <span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Dübendorf/convexity.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'../results/Räterschen/convexity.pdf'</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="clustering" class="level2">
@@ -686,18 +686,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>urban_types.explore(<span class="st">"cluster"</span>, categorical<span class="op">=</span><span class="va">True</span>, prefer_canvas<span class="op">=</span><span class="va">True</span>, tiles<span class="op">=</span><span class="st">"CartoDB Positron"</span>, tooltip<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="cell-82" class="cell">
-<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add DUE025</span></span>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add RAET051</span></span>
 <span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create new point geometries with the desired coordinates</span></span>
-<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>due025 <span class="op">=</span> Point(<span class="fl">8.62314</span>, <span class="fl">47.40015</span>)  <span class="co"># (East, North)</span></span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>raet051 <span class="op">=</span> Point(<span class="fl">8.79535</span>, <span class="fl">47.49858</span>)  <span class="co"># (East, North)</span></span>
 <span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new GeoDataFrame for the point, adding the properties (like 'ID')</span></span>
 <span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a>maxvogt_item <span class="op">=</span> geopandas.GeoDataFrame(</span>
 <span id="cb61-7"><a href="#cb61-7" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb61-8"><a href="#cb61-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">'uID'</span>: [<span class="st">'due025'</span>],</span>
-<span id="cb61-9"><a href="#cb61-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">'name'</span>: [<span class="st">'Service Building'</span>],</span>
-<span id="cb61-10"><a href="#cb61-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">'constructed'</span>: [<span class="st">'1967'</span>]</span>
+<span id="cb61-8"><a href="#cb61-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">'uID'</span>: [<span class="st">'raet051'</span>],</span>
+<span id="cb61-9"><a href="#cb61-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">'name'</span>: [<span class="st">'Auxiliary Building'</span>],</span>
+<span id="cb61-10"><a href="#cb61-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">'constructed'</span>: [<span class="st">'1970'</span>]</span>
 <span id="cb61-11"><a href="#cb61-11" aria-hidden="true" tabindex="-1"></a>    },</span>
-<span id="cb61-12"><a href="#cb61-12" aria-hidden="true" tabindex="-1"></a>    geometry<span class="op">=</span>[due025],</span>
+<span id="cb61-12"><a href="#cb61-12" aria-hidden="true" tabindex="-1"></a>    geometry<span class="op">=</span>[raet051],</span>
 <span id="cb61-13"><a href="#cb61-13" aria-hidden="true" tabindex="-1"></a>    crs<span class="op">=</span><span class="st">'EPSG:4326'</span></span>
 <span id="cb61-14"><a href="#cb61-14" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb61-15"><a href="#cb61-15" aria-hidden="true" tabindex="-1"></a></span>
@@ -713,7 +713,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="export">Export</h2>
 <p>Save cluster output geodata to geojson file:</p>
 <div id="cell-84" class="cell">
-<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>urban_types.to_file(<span class="st">'../data/raw/Dübendorf.geojson'</span>, driver<span class="op">=</span><span class="st">'GeoJSON'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>urban_types.to_file(<span class="st">'../data/raw/Räterschen.geojson'</span>, driver<span class="op">=</span><span class="st">'GeoJSON'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="utilities" class="level2">
@@ -1171,4 +1171,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.dev/mtwente/maxvogt-analysis/blob/main/analysis/dübendorf.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mtwente/maxvogt-analysis/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.dev/mtwente/maxvogt-analysis/blob/main/analysis/räterschen.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mtwente/maxvogt-analysis/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
