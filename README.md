@@ -88,9 +88,9 @@ This project is maintained by [@mtwente](https://github.com/mtwente). Please und
 
 ## Roadmap
 
-[ ] tidy up jupyter notebooks
-[ ] embed poster on GitHub pages website
-[ ] publish via Zenodo
+- [ ] tidy up jupyter notebooks
+- [ ] embed poster on GitHub pages website
+- [ ] publish via Zenodo
 
 ## Contributing
 
