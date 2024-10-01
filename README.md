@@ -51,7 +51,7 @@ Open the Jupyter Notebook platform.
 jupyter notebook
 ```
 
-Pick a notebook to start the spatial analysis for one of Max Vogt's buildings.
+Pick a notebook from `analysis/` to start the spatial analysis for one of Max Vogt's buildings.
 
 ## Use
 
@@ -88,7 +88,9 @@ This project is maintained by [@mtwente](https://github.com/mtwente). Please und
 
 ## Roadmap
 
-No changes are currently planned.
+[ ] tidy up jupyter notebooks
+[ ] embed poster on GitHub pages website
+[ ] publish via Zenodo
 
 ## Contributing
 
