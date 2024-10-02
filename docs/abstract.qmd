@@ -13,11 +13,11 @@ author:
       - Vienna University of Technology
 date: 09-25-2024
 date-modified: 02-15-2024
-bibliography: SBB-max-vogt.bib
+bibliography: ../assets/SBB-max-vogt.bib
 ---
 
 ::: {.callout-note appearance="simple"}
-This is the abstract for a poster on Max Vogt's work, presented at *Spatial Humanities 2024* at Otto-Friedrich-Universität Bamberg.
+This is the abstract for a [poster on Max Vogt's work](poster.qmd), presented at *Spatial Humanities 2024* at Otto-Friedrich-Universität Bamberg.
 :::
 
 Hundreds of thousands of passengers arrive at Zurich main station in thousands of trains every day, watched over by the signal box tower outside the station hall. Many of them passed Altstetten station just minutes before, with a high-rise apartment block next to the rails welcoming them to Switzerland’s biggest city. Some may have boarded the train at Stein-Säckingen on the banks of the Rhine, others perhaps in close-by suburban Spreitenbach. All these places were – to some extent – shaped by Max Vogt, who designed over 150 buildings for the Swiss Federal Railways (SBB). Although his buildings characterise many railway station areas in Switzerland until today and are familiar sights to many travellers, Vogt himself is hardly known. With our submission, we aim to showcase his work and to carry out morphological analyses, engaging with the ideas about architecture and urban spaces that materialised in his projects.
