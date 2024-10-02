@@ -1,8 +1,10 @@
-# Project Information
+---
+title: "Project Information"
+---
 
 _maxvogt-analysis_ contains research data – mainly geodata and Jupyter Notebooks – related to a project on railway infrastructure designed by Max Vogt. Moritz Twente and Luisa Omonsky analyse Vogt's œuvre from an urban design perspective, taking into account the buildings' placements in the built environment. In addition to this spatio-morphological analysis, another result of the project is an extensive survey of more than a hundred built structures that were designed by and/or under the supervision of Max Vogt during his time at SBB's Zurich construction division. Combining different catalogues of works and linking additional sources to them, the authors present a novel online database built SBB heritage.
 
-This project is presented as a poster ([Abstract](/docs/abstract.html)) at the [*Spatial Humanities* conference](https://spathum.uni-bamberg.de/) at Otto-Friedrichs-Universität Bamberg, September 25^th^–27^th^, 2024.
+This project is presented as a [poster](https://doi.org/10.5281/zenodo.13837394) at the [*Spatial Humanities 2024* conference](https://spathum.uni-bamberg.de/) at Otto-Friedrich-Universität Bamberg, September 25^th^–27^th^, 2024. For more information on the poster and project background, you can also refer to the corresponding [abstract](/docs/poster.html).
 
 ## People
 

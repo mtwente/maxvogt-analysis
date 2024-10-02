@@ -2,13 +2,16 @@
 
 This repository contains data for spatial analyses that are part of a research project on spatial/urban design features of railway-related built structures designed by the Swiss architect Max Vogt. The data in this repository is openly available to everyone and is intended to support reproducible research.
 
-Results of the analyses are accessible in an [online collection of Vogt's buildings](https://mtwente.github.io/maxvogt) and presented as a [poster](/docs/abstract.html) at the [Spatial Humanities 2024](https://spathum.uni-bamberg.de/) conference at the University of Bamberg.
+Results of the analyses are accessible in an [online collection of Vogt's buildings](https://mtwente.github.io/maxvogt) and presented as a [poster](https://doi.org/10.5281/zenodo.13837394) at the [Spatial Humanities 2024](https://spathum.uni-bamberg.de/) conference at the University of Bamberg.
 
 [![GitHub issues](https://img.shields.io/github/issues/mtwente/maxvogt-analysis.svg)](https://github.com/mtwente/maxvogt-analysis/issues)
 [![GitHub forks](https://img.shields.io/github/forks/mtwente/maxvogt-analysis.svg)](https://github.com/mtwente/maxvogt-analysis/network)
 [![GitHub stars](https://img.shields.io/github/stars/mtwente/maxvogt-analysis.svg)](https://github.com/mtwente/maxvogt-analysis/stargazers)
-[![DOI](https://zenodo.org/badge/ZENODO_RECORD.svg)](https://zenodo.org/badge/latestdoi/ZENODO_RECORD)
-[![Zotero](https://img.shields.io/badge/zotero-maxvogt-bb393c?logo=zotero)](https://www.zotero.org/groups/5400359/sbb-max-vogt/library)
+
+<!-- [![DOI](https://zenodo.org/badge/ZENODO_RECORD.svg)](https://zenodo.org/badge/latestdoi/ZENODO_RECORD) -->
+
+[![Poster](https://img.shields.io/badge/Poster-10.5281/zenodo.13837394-blue)](https://doi.org/10.5281/zenodo.13837394)
+[![Zotero](https://img.shields.io/badge/Zotero-maxvogt-bb393c?logo=zotero)](https://www.zotero.org/groups/5400359/sbb-max-vogt/library)
 <br>
 [![Code license](https://img.shields.io/badge/Code-AGPL_3.0-orange)](LICENSE-AGPL.md)
 [![Notebook license](https://img.shields.io/badge/Notebooks-CC_BY--SA_4.0-green)](LICENSE-CCBY.md)

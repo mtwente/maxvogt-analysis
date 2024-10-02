@@ -36,7 +36,16 @@ website:
 
   sidebar:
     contents:
-      - section: maxvogt-analysis
+      - text: Project
+        href: docs/about.qmd
+        contents:
+          - text: SpatHum 2024 Poster
+            href: docs/poster.qmd
+          - text: Poster Abstract
+            href: docs/abstract.qmd
+      - text: Workflow
+        href: docs/workflow.qmd
+      - section: Repository Information
         href: index.qmd
         contents:
           - text: Changelog
@@ -53,13 +62,6 @@ website:
             href: LICENSE-ODbL.md
           - text: Security
             href: SECURITY.md
-      - text: Project
-        href: docs/about.qmd
-        contents:
-          - text: Abstract
-            href: docs/abstract.qmd
-      - text: Workflow
-        href: docs/workflow.qmd
 
 format:
   html:

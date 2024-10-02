@@ -1,0 +1,23 @@
+---
+title: "SpatHum 2024 Poster"
+author:
+  - name: Moritz Twente
+    orcid: 0009-0005-7187-9774
+    email: moritz.twente@unibas.ch
+    affiliations:
+      - University of Basel
+  - name: Luisa Omonsky
+    orcid: 0009-0007-7402-7993
+    email: luisa.omonsky@tuwien.ac.at
+    affiliations:
+      - Vienna University of Technology
+date: 09-25-2024
+doi: 10.5281/zenodo.13837394
+citation: false
+---
+
+This project was presented as a poster at the [*Spatial Humanities 2024*](https://spathum.uni-bamberg.de/) conference at Otto-Friedrich-Universität Bamberg.
+
+Please refer to the [Zenodo record](https://doi.org/10.5281/zenodo.13837394) for the archived version of the poster.
+<br><br>
+![](../assets/Rheinfelden_Linienzeichnung.svg){fig-alt="Drawing of the cargo shed at Rheinfelden railway station."}
