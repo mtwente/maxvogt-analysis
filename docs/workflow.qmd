@@ -91,6 +91,29 @@ flowchart TD
   style CB3 fill:#F7F056
 ```
 
+### Sources
+
+- Literature Research
+- Federal Register of Buildings and Dwellings
+- Field Survey
+- SBB Historic Archives
+- YouTube, Flickr, ...
+
+### Data Storage
+
+- Wikidata
+- Wikimedia Commons
+- OpenStreetMap
+- GitHub Repository *maxvogt*
+- GitHub Repository *maxvogt-analysis*
+- Zenodo
+
+### Output
+
+- Website *maxvogt*
+- Website *maxvogt-analysis*
+- Conference Poster
+
 ## Tools
 
 The analysis is split up in Jupyter Notebooks that are available in this repository and can be launched either locally or using Binder.
