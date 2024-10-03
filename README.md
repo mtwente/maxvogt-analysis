@@ -7,9 +7,6 @@ Results of the analyses are accessible in an [online collection of Vogt's buildi
 [![GitHub issues](https://img.shields.io/github/issues/mtwente/maxvogt-analysis.svg)](https://github.com/mtwente/maxvogt-analysis/issues)
 [![GitHub forks](https://img.shields.io/github/forks/mtwente/maxvogt-analysis.svg)](https://github.com/mtwente/maxvogt-analysis/network)
 [![GitHub stars](https://img.shields.io/github/stars/mtwente/maxvogt-analysis.svg)](https://github.com/mtwente/maxvogt-analysis/stargazers)
-
-<!-- [![DOI](https://zenodo.org/badge/ZENODO_RECORD.svg)](https://zenodo.org/badge/latestdoi/ZENODO_RECORD) -->
-
 [![Poster](https://img.shields.io/badge/Poster-10.5281/zenodo.13837394-blue)](https://doi.org/10.5281/zenodo.13837394)
 [![Zotero](https://img.shields.io/badge/Zotero-maxvogt-bb393c?logo=zotero)](https://www.zotero.org/groups/5400359/sbb-max-vogt/library)
 <br>
@@ -92,7 +89,7 @@ This project is maintained by [@mtwente](https://github.com/mtwente). Please und
 ## Roadmap
 
 - [ ] tidy up jupyter notebooks
-- [ ] embed poster on GitHub pages website
+- [ ] enhance data documentation
 - [ ] publish via Zenodo
 
 ## Contributing
