@@ -89,7 +89,7 @@ This project is maintained by [@mtwente](https://github.com/mtwente). Please und
 ## Roadmap
 
 - [ ] tidy up jupyter notebooks
-- [ ] enhance data documentation
+- [ ] add page with info on data model for OSM, Wikidata, Wikimedia Commons, CollectionBuilder
 - [ ] publish via Zenodo
 
 ## Contributing
