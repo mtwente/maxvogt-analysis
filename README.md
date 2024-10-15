@@ -1,6 +1,6 @@
 # maxvogt-analysis
 
-This repository contains data for spatial analyses that are part of a research project on spatial/urban design features of railway-related built structures designed by the Swiss architect Max Vogt. The data in this repository is openly available to everyone and is intended to support reproducible research.
+This repository contains data for spatial analyses that are part of a research project on spatial/urban design features of railway-related built structures designed by the Swiss architect Max Vogt. The data in this repository is openly available to everyone and is intended to support reproducible research. See the [Quarto project website](https://mtwente.github.io/maxvogt-analysis/docs/workflow.html) for extensive documentation.
 
 Results of the analyses are accessible in an [online collection of Vogt's buildings](https://mtwente.github.io/maxvogt) and presented as a [poster](https://doi.org/10.5281/zenodo.13837394) at the [Spatial Humanities 2024](https://spathum.uni-bamberg.de/) conference at the University of Bamberg.
 
