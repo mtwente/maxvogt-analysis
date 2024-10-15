@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -231,7 +251,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tools" id="toc-tools" class="nav-link active" data-scroll-target="#tools">Tools</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link active" data-scroll-target="#sources">Sources</a></li>
+  <li><a href="#data-storage" id="toc-data-storage" class="nav-link" data-scroll-target="#data-storage">Data Storage</a></li>
+  <li><a href="#output" id="toc-output" class="nav-link" data-scroll-target="#output">Output</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/mtwente/maxvogt-analysis/edit/main/docs/workflow.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mtwente/maxvogt-analysis/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -352,38 +375,112 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<section id="sources" class="level3">
+<h3 class="anchored" data-anchor-id="sources">Sources</h3>
+<ul>
+<li><p><strong>Literature Research:</strong> The starting point for building an inventory to use for this project were two books on Max Vogt: <em>Max Vogt – Bauen für die Bahn 1957–1989</em> by Ruedi Weidmann and Karl Holenstein <span class="citation" data-cites="weidmann_max_2008-1">(<a href="#ref-weidmann_max_2008-1" role="doc-biblioref">2008</a>)</span>, and the <em>SBB Bauten Max Vogt</em> photo book by Martin Stollenwerk <span class="citation" data-cites="stollenwerk_sbb_2006">(<a href="#ref-stollenwerk_sbb_2006" role="doc-biblioref">2006</a>)</span>. Both present catalogues of works by Max Vogt, although they differ quite substantially. With this data, we built a combined inventory, drawing on additional sources such as cantonal/communal heritage convervation inventories for Zurich <span class="citation" data-cites="stadt_zurich_amt_fur_stadtebau_sbb_2020">(<a href="#ref-stadt_zurich_amt_fur_stadtebau_sbb_2020" role="doc-biblioref">2020</a>)</span>, news reports or articles in architecture journals <span class="citation" data-cites="allenspach_max_1994 odermatt_zur_1974">(e.g. <a href="#ref-allenspach_max_1994" role="doc-biblioref">Allenspach 1994</a>; <a href="#ref-odermatt_zur_1974" role="doc-biblioref">Odermatt 1974</a>)</span> or internal SBB newspapers <span class="citation" data-cites="bolliger_di_1977 generaldirektion_sbb_grenzbahnhof_1978 generaldirektion_sbb_fortschritt_1979">(e.g. <a href="#ref-bolliger_di_1977" role="doc-biblioref">Bolliger 1977</a>; <a href="#ref-generaldirektion_sbb_grenzbahnhof_1978" role="doc-biblioref">Generaldirektion SBB 1978</a>, <a href="#ref-generaldirektion_sbb_fortschritt_1979" role="doc-biblioref">1979b</a>)</span>. For a full list of references, see the <a href="https://www.zotero.org/groups/5400359/sbb-max-vogt/library">Zotero collection</a> or refer to the individual object bibliographies in the <a href="https://mtwente.github.io/maxvogt/">maxvogt online collection</a>.</p></li>
+<li><p><strong>Federal Register of Buildings and Dwellings:</strong> The data collected from the literature research was augmented with selected statistics on individual buildings that is available in the <a href="https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html">federal building registry</a> (Eidgenössisches Wohnungs- und Gebäuderegister, GWR). Especially relevant for us is the information on building construction years, even though there are several deviations of more than a decade compared to other sources. Refer to the <a href="https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.assetdetail.22905270.html">Merkmalskatalog</a> for more information on this resource.</p></li>
+<li><p><strong>Field Survey:</strong> All items that are part of the <a href="https://mtwente.github.io/maxvogt/">maxvogt collection</a> were visited in spring/summer 2024 for photo documentation and a survey of building features resp. spatial context. In a few cases where the address of a building was not provided in the sources, the locations could be determined via satellite imagery (e.g.&nbsp;the <a href="https://mtwente.github.io/maxvogt/items/lq064.html">service building in Landquart</a>). Apart from taking photos, the authors collected information that was later put into the OpenStreetMap database.</p></li>
+<li><p><strong>SBB Historic Archives:</strong> A lot of sources on Max Vogt’s buildings are available in <a href="https://www.sbbarchiv.ch/suchinfo.aspx">SBB Historic’s archive</a>. The catalogue was screened for content that was deemed to be relevant for the collection items. Some of SBB Historic content is also available on <a href="https://commons.wikimedia.org/wiki/Category:SBB_Historic">Wikimedia Commons</a>, but mostly the online catalogue points to offline data. Quite a lot of images are available to pre-view online, but it is not possible to download or embed them elsewhere. Noteworthy are the built heritage inventories done around the 1980s by Hans-Peter Bärtschi (e.g.&nbsp;an <a href="https://www.sbbarchiv.ch/detail.aspx?ID=539243">inventorisation</a> of the station infrastructure in Feldbach SG).</p></li>
+<li><p><strong>External Web Content</strong> was used in several cases for research and to add content to the online collection. Large repositories for potential data are YouTube – especially for historic amateur videos – and photo platforms. Apart from Flickr, more railway-specific platforms such as <a href="https://www.bahnbilder.de">bahnbilder.de</a> come to mind, even though it turned out that most pictures found there focus on the rolling stock and not on the buildings. A few short news reports on Vogt and his buildings, most of them obituaries on the occasion of Vogt’s death in 2019, can also be found online. Content of this type was mainly used to get more information on e.g.&nbsp;building heights or to determine at what point in time a building was renovated, painted, expanded etc. External web content was either directly added to the CollectionBuilder items or stored in the Zotero project bibliography (see below).</p></li>
+</ul>
+</section>
+<section id="data-storage" class="level3">
+<h3 class="anchored" data-anchor-id="data-storage">Data Storage</h3>
+<ul>
+<li><p><strong>Wikidata:</strong> All items that make up the collection of works by Max Vogt were added to Wikidata with a statement specifying Max Vogt as the architect. Display all Wikidata items for buildings by Max Vogt using <a href="https://w.wiki/BSa9">this query</a>. Max Vogt himself also has a wikidata item: <a href="https://www.wikidata.org/wiki/Q1913571">Q1913571</a>. Each built structure has technical information stored in Wikidata, and, where available, information on renovation/restauration timelines. Links to the objects’ Wikimedia Commons Categories and OpenStreetMap entries were established using the corresponding Wikidata properties. Where applicable, reference links are provided for statements. Some secondary literature on Max Vogt is also modelled on Wikidata – refer to the items about Max Vogt using <a href="https://w.wiki/BSas">this query</a>.</p></li>
+<li><p><strong>Wikimedia Commons:</strong> As part of the field survey in spring/summer 2024, the authors took photos of each collection item and uploaded a selection of them to Wikimedia Commons with the intention of loading those images into CollectionBuilder. A Commons Category for Max Vogt already <a href="https://commons.wikimedia.org/wiki/Category:Max_Vogt">existed</a> and was restructured to fit the data model. There are categories for <a href="https://commons.wikimedia.org/wiki/Category:Buildings_by_Max_Vogt">buildings</a>, <a href="https://commons.wikimedia.org/wiki/Category:Fountains_by_Max_Vogt">fountains</a> and <a href="https://commons.wikimedia.org/wiki/Category:Bridges_by_Max_Vogt">bridges</a> by Max Vogt with a total of 112 subcategories – one for each structure designed by Vogt where media is available. All uploaded images were annotated comprehensively, with description texts, technical image metadata, and geocoordinates of object and photography locations. An overview map is available <a href="https://wikimap.toolforge.org/?cat=Max_Vogt&amp;subcats=true&amp;subcatdepth=3">via WikiMap</a>. Image metadata is also available as <a href="https://commons.wikimedia.org/wiki/Commons:Structured_data/Modeling">structured data</a>. Wikimedia Commons category pages are linked to the corresponding Wikidata items to add infoboxes on the category pages. In those cases where relevant files had already been uploaded to Wikimedia Commons before, they were also added to the object’s category. These third-party files are mostly provided by <a href="https://www.sbbhistoric.ch/">SBB Historic</a> (see above) or ETH Zurich Library’s <a href="https://e-pics3.ethz.ch/de/home/">E-Pics database</a>. As an additional feature, Wikimedia Commons allows users to tag and annotate image regions as in <a href="https://commons.wikimedia.org/wiki/File:Lokomotivdepots_G_und_F_Z%C3%BCrich.jpg">this file</a>. Buildings by Max Vogt were added as notes, linking to the corresponding Wikidata entries. This annotation has only been done for a few singular items so far.</p></li>
+<li><p><strong>OpenStreetMap:</strong> All relevant information gathered during the surveys was added to OpenStreetMap (OSM). All OSM data tagged as items by Max Vogt can be displayed via the Overpass API <a href="https://osm.li/WV_">using this query</a>. Except for two of Vogt’s works, all were already present in the OSM database. Pre-existing data was enriched with more and up-to-date information from the suveys in spring/summer 2024. Several buildings had to be re-mapped by splitting up larger building complexes that had been mapped as one single item. Via the corresponding OSM tagging scheme, links <a href="https://wiki.openstreetmap.org/wiki/Key:wikimedia_commons">to Wikimedia Commons</a> and <a href="https://wiki.openstreetmap.org/wiki/Key:wikidata">to Wikidata</a> were added to the database (and vice versa). Additionally, all buildings were modelled according to the <a href="https://wiki.openstreetmap.org/wiki/Simple_3D_Buildings">Simple 3D Buidings tagging scheme</a> and are, as of September 2024, available for use in OSM 3D renderers such as the <a href="https://demo.f4map.com/#">F4Map Demo</a> or Kevin Nowaczyk’s <a href="https://github.com/Beakerboy/OSMBuilding">OSM Building renderer</a>. Please note that not all renderers support all features of the Simple 3D Buildings tagging scheme.</p></li>
+<li><p><strong>GitHub Repository <em>maxvogt</em>:</strong> The GitHub repository at <a href="https://github.com/mtwente/maxvogt"><em>mtwente/maxvogt</em></a> is the technical basis for the online collection about Max Vogt set up by the authors. A detailed description is available in the repository’s <a href="https://github.com/mtwente/maxvogt/blob/main/README.md">readme</a>. The repository contains an instance of <a href="https://collectionbuilder.github.io/">CollectionBuilder</a>, an open source framework for creating metadata-driven digital collections which is developed at the University Library of Idaho. Barely any actual research data is stored in the repository, since all collection items (images, PDFs, geodata) are fetched from other sources, such as Wikimedia Commons, SBB Archiv and others.</p></li>
+<li><p><strong>GitHub Repository <em>maxvogt-analysis</em>:</strong> The GitHub repository at <a href="https://github.com/mtwente/maxvogt-analysis"><em>mtwente/maxvogt-analysis</em></a> is used for storing research data that was generated as part of this project. The authors provide project documentation, license information, instructions on how to reproduce the data set using Jupyter Notebooks. Geodata that is generated by running the notebooks is stored in the repository in json files, and is fetched from here to be displayed in the <a href="https://mtwente.github.io/maxvogt">online collection</a> using a Leaflet map. The <em>maxvogt-analysis</em> repository is based on the <a href="https://maehr.github.io/open-research-data-template/">GitHub template for FAIR and open research data</a> by <a href="https://www.moritzmaehr.ch">Moritz Mähr</a>, adhering to best practices for open research data as outlined by <a href="https://book.the-turing-way.org/index.html">The Turing Way</a>.</p></li>
+<li><p><strong>Zenodo:</strong> The authors use <a href="https://zenodo.org/">Zenodo</a> for long-term archiving of the project data and its output, e.g.&nbsp;for making the project conference poster <a href="https://doi.org/10.5281/zenodo.13837394">available</a> in PDF format.</p></li>
+</ul>
+</section>
+<section id="output" class="level3">
+<h3 class="anchored" data-anchor-id="output">Output</h3>
+<ul>
+<li><p><strong>Website <em>maxvogt</em>:</strong> One major part of the project is the online collection about Max Vogt’s work. This collection is made with CollectionBuilder (see above), which generates a website for browsing the data set and facilitates explorative access to the collection using features such as timelines, maps and wordclouds. The website is hosted using <a href="https://pages.github.com/">GitHub Pages</a> and is accessible via <a href="https://mtwente.github.io/maxvogt">https://mtwente.github.io/maxvogt</a>.</p></li>
+<li><p><strong>Website <em>maxvogt-analysis</em>:</strong> The online collection on Max Vogt is partly built with geodata generated by Jupyter notebooks in the <em>maxvogt-analysis</em> repository. The authors built this website to document the project research data. It is built with <a href="https://www.quarto.org">Quarto</a>, see the section about the <em>maxvogt-analysis</em> GitHub repository above for more information. The website is hosted using <a href="https://pages.github.com/">GitHub Pages</a> and is accessible via <a href="https://mtwente.github.io/maxvogt-analysis">https://mtwente.github.io/maxvogt</a>.</p></li>
+<li><p><strong>Zotero:</strong> The corpus of literature that was consulted for this research project consists of a few academic publications, especially from heritage conservation studies and Swiss architecture guides <span class="citation" data-cites="weidmann_max_2008-1 noseda_vogt_1998 allenspach_max_1994 weidmann_max_2008">(e.g. <a href="#ref-weidmann_max_2008-1" role="doc-biblioref">Weidmann and Holenstein 2008</a>; <a href="#ref-noseda_vogt_1998" role="doc-biblioref">Noseda 1998</a>; <a href="#ref-allenspach_max_1994" role="doc-biblioref">Allenspach 1994</a>; <a href="#ref-weidmann_max_2008" role="doc-biblioref">Weidmann 2008</a>)</span>. Additionally, there are several articles in newspapers or in architecture journals relating to Vogt’s work –&nbsp;either on the occasion of a station’s redesign <span class="citation" data-cites="capol_funf_1998 cieslik_elegant_2020 hodel_infrastruktur_2019 huber_schienenstrange_2022 sbb_immobilien_revival_2023">(e.g. <a href="#ref-capol_funf_1998" role="doc-biblioref">Capol 1998</a>; <a href="#ref-cieslik_elegant_2020" role="doc-biblioref">Cieslik 2020</a>; <a href="#ref-hodel_infrastruktur_2019" role="doc-biblioref">Hodel 2019</a>; <a href="#ref-huber_schienenstrange_2022" role="doc-biblioref">Huber 2022</a>; <a href="#ref-sbb_immobilien_revival_2023" role="doc-biblioref">SBB Immobilien 2023</a>)</span> or as part of obituaries for Vogt <span class="citation" data-cites="vogeli_max_2019 salm_rohe_2019 hohler_er_2019 redaktion_zuriost_max_2019">(e.g. <a href="#ref-vogeli_max_2019" role="doc-biblioref">Vögeli 2019</a>; <a href="#ref-salm_rohe_2019" role="doc-biblioref">Salm 2019</a>; <a href="#ref-hohler_er_2019" role="doc-biblioref">Hohler 2019</a>; <a href="#ref-redaktion_zuriost_max_2019" role="doc-biblioref">Redaktion Züriost 2019</a>)</span>. Relevant sources for contemporary descriptions of individual buildings are internal SBB documents such as employee newspapers <span class="citation" data-cites="generaldirektion_sbb_fortschritt_1979 generaldirektion_sbb_grenzbahnhof_1978 generaldirektion_sbb_neue_1979">(e.g. <a href="#ref-generaldirektion_sbb_fortschritt_1979" role="doc-biblioref">Generaldirektion SBB 1979b</a>, <a href="#ref-generaldirektion_sbb_grenzbahnhof_1978" role="doc-biblioref">1978</a>, <a href="#ref-generaldirektion_sbb_neue_1979" role="doc-biblioref">1979a</a>)</span> and other corporate publications <span class="citation" data-cites="sbb_historic_kulturerbejahr_2018 sbb_immobilien_revival_2023">(e.g. <a href="#ref-sbb_historic_kulturerbejahr_2018" role="doc-biblioref">SBB Historic 2018</a>; <a href="#ref-sbb_immobilien_revival_2023" role="doc-biblioref">SBB Immobilien 2023</a>)</span>. Most of the internal SBB documents are not accessible online. The authors used both <a href="https://www.sbbarchiv.ch/">SBB Archives</a> or libraries such as the <a href="https://ub.unibas.ch/en/ubw-swa/">Basel University Business and Economics Library/Swiss Economoic Archives</a>. Sources were added to a <a href="https://www.zotero.org/groups/5400359/sbb-max-vogt/library">shared Zotero library</a> to facilitate access to research on Max Vogt’s work.</p></li>
+<li><p><strong>Conference Poster:</strong> This project was presented at the <a href="https://spathum.uni-bamberg.de/">Spatial Humanities 2024</a> conference in Bamberg. A poster showcased the project using four selected collection items to exhibit the range of projects that are part of Vogt’s catalogue of works. Additionally, information on Vogt’s biography and on CollectionBuilder is provided. The poster itself was designed using Adobe InDesign, the drawings were made using Adobe Illustrator, and the map was created with OpenStreetMap geodata in QGIS. The poster is archived on Zenodo, see <a href="../docs/poster.html">SpatHum 2024 Poster</a>.</p></li>
+</ul>
+</section>
 <section id="tools" class="level2">
 <h2 class="anchored" data-anchor-id="tools">Tools</h2>
 <p>The analysis is split up in Jupyter Notebooks that are available in this repository and can be launched either locally or using Binder.</p>
 <p>The most important tool used for the spatial analysis is <strong>momepy</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> by Martin Fleischmann and James Gaboardi. See the <a href="https://docs.momepy.org/en/stable/index.html">documentation</a> for momepy examples and tutorials.</p>
 <p>Geodata used for the analysis is retrieved from OpenStreetMap using the <strong>OSMnx</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> package by Geoff Boeing. See <a href="https://osmnx.readthedocs.io/en/stable/">readthedocs.io</a> for documentation.</p>
-<!--
-Input: Lila
-Zwischen-Output:
-archived Output: Blau
-presentable Output: Gelb
-#F6C141 orange
-#F7F056 gelb
-Input
-Zwischen-Output
-Datenablage: helles Orange F6C141
-Datenpräsentation: Gelb
 
-Input: stadium
-Zwischen-Output: eckig
-Output: rund
-
-  style TL3 fill:#7BAFDE
-  style RN4 fill:#7BAFDE
-  style RG3 fill:#7BAFDE
-  style RW3 fill:#F7F056
--->
 
 
 </section>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-allenspach_max_1994" class="csl-entry" role="listitem">
+Allenspach, Christoph. 1994. <span>“Max <span>Vogt</span>, <span>SBB</span>-<span>Architekt</span>.”</span> <em>Baudoc-Bulletin</em> 1994 (2): 5–13.
+</div>
+<div id="ref-bolliger_di_1977" class="csl-entry" role="listitem">
+Bolliger, H. 1977. <span>“<span>DI</span> <span>Zürich</span> Feiert 50 <span>Jahre</span> <span>Depot</span> <span>G</span>.”</span> <em>SBB-Nachrichtenblatt. Zeitschrift Für Das Personal Der Schweizerischen Bundesbahnen</em> 1977 (11): 216.
+</div>
+<div id="ref-capol_funf_1998" class="csl-entry" role="listitem">
+Capol, Jan. 1998. <span>“Fünf Neue <span>Bahnhöfe</span>: Die <span>S</span>-<span>Bahnhöfe</span> Sind Die <span>Schaufassaden</span> Der <span>Agglomerationsbahn</span>.”</span> <em>Hochparterre</em> 11 (11): 28–31. <a href="https://doi.org/10.5169/SEALS-120914">https://doi.org/10.5169/SEALS-120914</a>.
+</div>
+<div id="ref-cieslik_elegant_2020" class="csl-entry" role="listitem">
+Cieslik, Tina. 2020. <span>“Elegant Aufgeräumt.”</span> <em>Espazium</em>. <a href="https://www.espazium.ch/de/aktuelles/elegant-aufgeraeumt">https://www.espazium.ch/de/aktuelles/elegant-aufgeraeumt</a>.
+</div>
+<div id="ref-generaldirektion_sbb_grenzbahnhof_1978" class="csl-entry" role="listitem">
+Generaldirektion SBB, ed. 1978. <span>“Grenzbahnhof <span>Buchs</span> <span>SG</span>.”</span> <em>SBB-Nachrichtenblatt. Zeitschrift Für Das Personal Der Schweizerischen Bundesbahnen</em> 1978 (2): 33.
+</div>
+<div id="ref-generaldirektion_sbb_neue_1979" class="csl-entry" role="listitem">
+———, ed. 1979a. <span>“Die Neue <span>Verbindungslinie</span> <span>Sargans</span>-<span>Trübbach</span>.”</span> <em>SBB-Nachrichtenblatt. Zeitschrift Für Das Personal Der Schweizerischen Bundesbahnen</em> 1979 (7): 127–28.
+</div>
+<div id="ref-generaldirektion_sbb_fortschritt_1979" class="csl-entry" role="listitem">
+———, ed. 1979b. <span>“Fortschritt Bei Der <span>Flughafenbahn</span> <span>Kloten</span>.”</span> <em>SBB-Nachrichtenblatt. Zeitschrift Für Das Personal Der Schweizerischen Bundesbahnen</em> 1979 (1): 6–7.
+</div>
+<div id="ref-hodel_infrastruktur_2019" class="csl-entry" role="listitem">
+Hodel, Marcel. 2019. <span>“Infrastruktur Macht <span>Vorstadtkultur</span>.”</span> <em>Archithese</em> 2019 (1): 26–30. <a href="https://www.10zu8.ch/media/206_swb_media_archithese.pdf">https://www.10zu8.ch/media/206_swb_media_archithese.pdf</a>.
+</div>
+<div id="ref-hohler_er_2019" class="csl-entry" role="listitem">
+Hohler, Stefan. 2019. <span>“Er War Der Grosse <span>Unbekannte</span>, Den Jeder Kennt.”</span> <em>Tages-Anzeiger</em>, December. <a href="https://www.tagesanzeiger.ch/er-war-der-grosse-unbekannte-den-jeder-kennt-343423397038">https://www.tagesanzeiger.ch/er-war-der-grosse-unbekannte-den-jeder-kennt-343423397038</a>.
+</div>
+<div id="ref-huber_schienenstrange_2022" class="csl-entry" role="listitem">
+Huber, Werner. 2022. <span>“Schienenstränge Und <span>Luftschlösser</span>.”</span> <em>Hochparterre Themenfokus: Dübendorf Wächst</em>. <a href="https://www.hochparterre.ch/nachrichten/themenfokus/schienenstraenge-und-luftschloesser">https://www.hochparterre.ch/nachrichten/themenfokus/schienenstraenge-und-luftschloesser</a>.
+</div>
+<div id="ref-noseda_vogt_1998" class="csl-entry" role="listitem">
+Noseda, Irma. 1998. <span>“Vogt, <span>Max</span>.”</span> In <em>Architektenlexikon Der <span>Schweiz</span> 19./20. <span>Jahrhundert</span></em>, edited by Isabelle Rucki and Dorothee Huber, 553–54. Basel: Birkhäuser.
+</div>
+<div id="ref-odermatt_zur_1974" class="csl-entry" role="listitem">
+Odermatt, Bruno. 1974. <span>“Zur <span>Bahnhofsarchitektur</span>.”</span> <em>Schweizerische Bauzeitung</em> 92 (27): 673–82. <a href="https://doi.org/10.5169/SEALS-72418">https://doi.org/10.5169/SEALS-72418</a>.
+</div>
+<div id="ref-redaktion_zuriost_max_2019" class="csl-entry" role="listitem">
+Redaktion Züriost. 2019. <span>“Max <span>Vogt</span> Ist Tot.”</span> <em>Züriost</em>, December. <a href="https://zueriost.ch/news/2019-12-30/max-vogt-ist-tot">https://zueriost.ch/news/2019-12-30/max-vogt-ist-tot</a>.
+</div>
+<div id="ref-salm_rohe_2019" class="csl-entry" role="listitem">
+Salm, Karin. 2019. <span>“Rohe <span>Bauten</span> Mit <span>Eleganz</span> Und <span>Raffinesse</span>: <span>SBB</span>-<span>Architekt</span> <span>Max</span> <span>Vogt</span> Ist Tot.”</span> <em>SRF</em>, December. <a href="https://www.srf.ch/kultur/kunst/sbb-architekt-max-vogt-ist-tot-rohe-bauten-mit-eleganz-und-raffinesse">https://www.srf.ch/kultur/kunst/sbb-architekt-max-vogt-ist-tot-rohe-bauten-mit-eleganz-und-raffinesse</a>.
+</div>
+<div id="ref-sbb_historic_kulturerbejahr_2018" class="csl-entry" role="listitem">
+SBB Historic. 2018. <span>“Kulturerbejahr 2018: <span>Max</span> <span>Vogt</span>.”</span> <em>SBB HIstoric Magazin</em>. <a href="https://www.sbbhistoric.ch/blog/kulturerbejahr-2018-max-vogt">https://www.sbbhistoric.ch/blog/kulturerbejahr-2018-max-vogt</a>.
+</div>
+<div id="ref-sbb_immobilien_revival_2023" class="csl-entry" role="listitem">
+SBB Immobilien. 2023. <span>“Revival Einer <span>Architekturikone</span> Am <span>Bahnhof</span> <span>Zürich</span> <span>Altstetten</span>.”</span> <em>SBB Immobilien Stories</em>. <a href="https://sbb-immobilien.ch/story/revival-ikone-altstetten/">https://sbb-immobilien.ch/story/revival-ikone-altstetten/</a>.
+</div>
+<div id="ref-stadt_zurich_amt_fur_stadtebau_sbb_2020" class="csl-entry" role="listitem">
+Stadt Zürich, Amt für Städtebau. 2020. <em><span>SBB</span> <span>Objekte</span> <span>Stadt</span> <span>Zürich</span>: <span>Inventarergänzung</span> 2020</em>. Zürich: Selbstverlag. <a href="https://www.stadt-zuerich.ch/content/dam/stzh/hbd/Deutsch/Archaeologie_Denkmalpflege/Publikationen%20und%20Broschueren/Inventar/SBB_Inventarisation.pdf">https://www.stadt-zuerich.ch/content/dam/stzh/hbd/Deutsch/Archaeologie_Denkmalpflege/Publikationen%20und%20Broschueren/Inventar/SBB_Inventarisation.pdf</a>.
+</div>
+<div id="ref-stollenwerk_sbb_2006" class="csl-entry" role="listitem">
+Stollenwerk, Martin. 2006. <em><span>SBB</span> <span>Bauten</span>, <span>Max</span> <span>Vogt</span></em>. Zürich: GTA Verlag.
+</div>
+<div id="ref-vogeli_max_2019" class="csl-entry" role="listitem">
+Vögeli, Dorothee. 2019. <span>“Max <span>Vogt</span> Hat Mit <span>Bahnbauten</span> Aus Rohem <span>Beton</span> <span>Architekturgeschichte</span> Geschrieben.”</span> <em>Neue Zürcher Zeitung</em>, December. <a href="https://www.nzz.ch/zuerich/sbb-hausarchitekt-max-vogt-gestorben-ld.1531358?reduced=true">https://www.nzz.ch/zuerich/sbb-hausarchitekt-max-vogt-gestorben-ld.1531358?reduced=true</a>.
+</div>
+<div id="ref-weidmann_max_2008" class="csl-entry" role="listitem">
+Weidmann, Ruedi. 2008. <span>“Max <span>Vogt</span>, <span>SBB</span>-<span>Architekt</span>.”</span> <em>Tec21</em> 134 (20). <a href="https://doi.org/10.5169/SEALS-108925">https://doi.org/10.5169/SEALS-108925</a>.
+</div>
+<div id="ref-weidmann_max_2008-1" class="csl-entry" role="listitem">
+Weidmann, Ruedi, and Karl Holenstein. 2008. <em>Max <span>Vogt</span> - <span>Bauen</span> Für Die <span>Bahn</span> 1957–1989</em>. Edited by SBB-Fachstelle für Denkmalschutzfragen and Gesellschaft für Schweizerische Kunstgeschichte. 1. Auflage. Architektur- Und <span>Technikgeschichte</span> Der <span>Eisenbahnen</span> in Der <span>Schweiz</span> 1. Zürich: Scheidegger &amp; Spiess.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>Fleischmann, M. (2019) ‘momepy: Urban Morphology Measuring Toolkit’, Journal of Open Source Software, 4(43), p.&nbsp;1807. <a href="https://joss.theoj.org/papers/10.21105/joss.01807">doi: 10.21105/joss.01807</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
